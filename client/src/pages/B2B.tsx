@@ -4,8 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Lock, Users, TrendingUp, Zap } from "lucide-react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function B2B() {
+  usePageMeta({
+    title: "Portal B2B - Starfix",
+    description: "Portal B2B dla partnerow biznesowych. Dostep do katalogów produktów, zarzadzania zamówieniami i sledzenia dostaw.",
+    keywords: "B2B, portal, partnerzy, zamówienia, Starfix",
+    ogTitle: "Portal B2B - Starfix",
+    ogDescription: "Portal B2B dla partnerow biznesowych Starfix.",
+    ogUrl: "https://www.starfix.eu/b2b",
+    canonicalUrl: "https://www.starfix.eu/b2b",
+  });
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />

@@ -4,8 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Company() {
+  usePageMeta({
+    title: "O Nas - Starfix",
+    description: "Technika Zamocowań Amex - producent wysokiej jakosci lacznikow do termoizolacji. Ponad 20 lat doswiadczenia w branzy budowlanej.",
+    keywords: "o nas, firma, Starfix, AMEX, historia, misja",
+    ogTitle: "O Nas - Starfix",
+    ogDescription: "Technika Zamocowań Amex - producent wysokiej jakosci lacznikow do termoizolacji.",
+    ogUrl: "https://www.starfix.eu/firma",
+    canonicalUrl: "https://www.starfix.eu/firma",
+  });
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />

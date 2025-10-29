@@ -1,0 +1,24 @@
+# Starfix Website Robots Configuration
+# Allow all search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.git
+Disallow: /node_modules
+
+# Specific rules for common search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.starfix.eu/sitemap.xml

@@ -4,8 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Download, FileText } from "lucide-react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Documentation() {
+  usePageMeta({
+    title: "Dokumentacja Techniczna - Starfix",
+    description: "Pobierz karty techniczne, certyfikaty i instrukcje montazu dla produktow AMEX-Starfix.",
+    keywords: "dokumentacja, karty techniczne, certyfikaty, instrukcje, Starfix",
+    ogTitle: "Dokumentacja Techniczna - Starfix",
+    ogDescription: "Karty techniczne, certyfikaty i instrukcje montazu dla produktow AMEX-Starfix.",
+    ogUrl: "https://www.starfix.eu/dokumentacja",
+    canonicalUrl: "https://www.starfix.eu/dokumentacja",
+  });
   const docs = [
     {
       title: "Katalog Produktów",

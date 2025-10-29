@@ -5,8 +5,19 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Contact() {
+  usePageMeta({
+    title: "Kontakt - Starfix",
+    description: "Skontaktuj sie z nami. Dane kontaktowe, formularz kontaktowy i informacje o godzinach pracy firmy Starfix.",
+    keywords: "kontakt, telefon, email, formularz, Starfix",
+    ogTitle: "Kontakt - Starfix",
+    ogDescription: "Skontaktuj sie z nami. Dane kontaktowe i formularz kontaktowy.",
+    ogUrl: "https://www.starfix.eu/kontakt",
+    canonicalUrl: "https://www.starfix.eu/kontakt",
+  });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",

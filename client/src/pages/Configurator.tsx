@@ -3,8 +3,18 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Configurator() {
+  usePageMeta({
+    title: "Konfigurator Lacznikow - Starfix",
+    description: "Konfigurator produktow AMEX-Starfix. Znajdz idealny lacznik dla Twojego projektu termoizolacyjnego.",
+    keywords: "konfigurator, laczniki, termoizolacja, AMEX, Starfix",
+    ogTitle: "Konfigurator Lacznikow - Starfix",
+    ogDescription: "Konfigurator produktow AMEX-Starfix do termoizolacji.",
+    ogUrl: "https://www.starfix.eu/konfigurator",
+    canonicalUrl: "https://www.starfix.eu/konfigurator",
+  });
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />

@@ -4,8 +4,19 @@ import { Link } from "wouter";
 import { ArrowRight, Award, Zap, Shield, Users } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Home() {
+  usePageMeta({
+    title: "Starfix - Nowoczesne Rozwiazania w Zamocowaniach Budowlanych",
+    description: "Producent wysokiej jakosci lacznikow do termoizolacji fasadowej i dachowej. Innowacyjne rozwiazania dla branzy budowlanej.",
+    keywords: "laczniki budowlane, zamocowania, termoizolacja, fasada, dach, AMEX, Starfix, konfigurator",
+    ogTitle: "Starfix - Nowoczesne Rozwiazania w Zamocowaniach",
+    ogDescription: "Producent wysokiej jakosci lacznikow do termoizolacji fasadowej i dachowej.",
+    ogUrl: "https://www.starfix.eu/",
+    canonicalUrl: "https://www.starfix.eu/",
+  });
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
@@ -13,6 +24,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-br from-red-600 via-red-500 to-red-700 text-white py-20 md:py-32">
+          <BackgroundBeams className="opacity-30" />
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full mix-blend-multiply filter blur-3xl"></div>

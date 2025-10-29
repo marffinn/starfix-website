@@ -4,8 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Products() {
+  usePageMeta({
+    title: "Nasza Oferta - Starfix",
+    description: "Kompleksowa gama wysokiej jakosci lacznikow dla branzy budowlanej. Produkty AMEX-Starfix do termoizolacji, zamocowań ogolnych i suchej zabudowy.",
+    keywords: "oferta, produkty, laczniki, termoizolacja, AMEX, Starfix",
+    ogTitle: "Nasza Oferta - Starfix",
+    ogDescription: "Kompleksowa gama wysokiej jakosci lacznikow dla branzy budowlanej.",
+    ogUrl: "https://www.starfix.eu/oferta",
+    canonicalUrl: "https://www.starfix.eu/oferta",
+  });
   const products = [
     {
       name: "Łączniki Ogólne",

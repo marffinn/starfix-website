@@ -18,7 +18,7 @@ export default function Configurator() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
-      
+
       <main className="flex-1">
         {/* Breadcrumb */}
         <div className="bg-gray-50 border-b border-gray-200">
@@ -47,7 +47,7 @@ export default function Configurator() {
           <div className="container">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <iframe
-                src="https://marffinn.github.io/sf-configurator/"
+                src="http://192.168.1.139:3001/sf-configurator"
                 title="Konfigurator Łączników AMEX-Starfix"
                 className="w-full h-screen min-h-[800px] border-0"
                 allow="fullscreen"

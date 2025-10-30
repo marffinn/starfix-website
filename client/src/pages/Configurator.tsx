@@ -47,7 +47,7 @@ export default function Configurator() {
           <div className="container">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <iframe
-                src="http://192.168.1.139:3001/sf-configurator"
+                src="http://192.168.1.139:3002/sf-configurator"
                 title="Konfigurator Łączników AMEX-Starfix"
                 className="w-full h-screen min-h-[800px] border-0"
                 allow="fullscreen"
